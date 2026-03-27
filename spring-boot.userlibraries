@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-webmvc:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-webmvc/4.0.4/44ffb609c6df8bcc9935747a45b040e3045bd828/spring-boot-starter-webmvc-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-jackson:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jackson/4.0.4/74d1f55989d0c05ff95c1bc480edfe37a4696e21/spring-boot-starter-jackson-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-tomcat:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat/4.0.4/471602eff59c467264087bbc4b93b8d328cc6751/spring-boot-starter-tomcat-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter/4.0.4/f7b99b243159a2808d74d7d8c6ded4d0b127e756/spring-boot-starter-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-http-converter:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-http-converter/4.0.4/b0fe5e9557d523a9b01661f26e51f3483d2dbab7/spring-boot-http-converter-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-webmvc:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-webmvc/4.0.4/aef89d26a40b684a38ad50765d0a2d33527f5c36/spring-boot-webmvc-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-jackson:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-jackson/4.0.4/1abf88019e0ef8fb477367e90ff9f158213406e5/spring-boot-jackson-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-tomcat-runtime:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-tomcat-runtime/4.0.4/b5aa536a6f89b70b602c89d9a53cf4b31bb53970/spring-boot-starter-tomcat-runtime-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-tomcat:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-tomcat/4.0.4/18fd1c4577b141b6461e701472415e7bd6f29491/spring-boot-tomcat-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-logging:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/4.0.4/460cfc1de67d918bfcaf03feb3cb526768139d02/spring-boot-starter-logging-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-autoconfigure:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-autoconfigure/4.0.4/e7d484851da96008f341cab0336ff7b923ba25ae/spring-boot-autoconfigure-4.0.4.jar" />
+  </library>
+  <library name="Gradle: jakarta.annotation:jakarta.annotation-api:3.0.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/jakarta.annotation/jakarta.annotation-api/3.0.0/54f928fadec906a99d558536756d171917b9d936/jakarta.annotation-api-3.0.0.jar" />
+  </library>
+  <library name="Gradle: org.yaml:snakeyaml:2.5">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.5/2d53ddec134280cb384c1e35d094e5f71c1f2316/snakeyaml-2.5.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/4.0.4/93d6e7c5b747d640bbad17971c5ce957bee88c5f/spring-boot-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-web:7.0.6">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/7.0.6/2baeb353efd42374239cc45e8d02780d6c6e7a77/spring-web-7.0.6.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-servlet:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-servlet/4.0.4/9fab7c94af0db89061e6482a5883bed6d35ec9b5/spring-boot-servlet-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-webmvc:7.0.6">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/7.0.6/da516a887d0fea326c16b07fb2519f7f112f8eda/spring-webmvc-7.0.6.jar" />
+  </library>
+  <library name="Gradle: tools.jackson.core:jackson-databind:3.1.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-databind/3.1.0/59a342020cc4f5a49335c16820be6ed8ca8ee6c7/jackson-databind-3.1.0.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-web-server:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-web-server/4.0.4/fa5a9f0f4625491552aaf91dcefe5e1cb590d954/spring-boot-web-server-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-websocket:11.0.18">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-websocket/11.0.18/7b0009018394a033e922e8e956d4947dce1ffd07/tomcat-embed-websocket-11.0.18.jar" />
+  </library>
+  <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-core:11.0.18">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-core/11.0.18/a96bb1b8a21ee7e93ce01cce7fd63f8e7561ec92/tomcat-embed-core-11.0.18.jar" />
+  </library>
+  <library name="Gradle: org.apache.tomcat.embed:tomcat-embed-el:11.0.18">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.apache.tomcat.embed/tomcat-embed-el/11.0.18/44a04ab91a1e046f436c1746d5a93d1fff57982f/tomcat-embed-el-11.0.18.jar" />
+  </library>
+  <library name="Gradle: ch.qos.logback:logback-classic:1.5.32">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.5.32/2b1042c50f508f2eb402bd4d22ccbdf94cc37d2e/logback-classic-1.5.32.jar" />
+  </library>
+  <library name="Gradle: org.apache.logging.log4j:log4j-to-slf4j:2.25.3">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-to-slf4j/2.25.3/30adfb40cca243ec88cf7ec1fddb411ab55faa4f/log4j-to-slf4j-2.25.3.jar" />
+  </library>
+  <library name="Gradle: org.slf4j:jul-to-slf4j:2.0.17">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.slf4j/jul-to-slf4j/2.0.17/524cb6ccc2b68a57604750e1ab8b13b5a786a6aa/jul-to-slf4j-2.0.17.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-context:7.0.6">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/7.0.6/e722fa5455c1be437de1947d570506cb2bb142e9/spring-context-7.0.6.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-core:7.0.6">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/7.0.6/5e4e7fd5bee4be66a0786abe0c90419a713114b5/spring-core-7.0.6.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-beans:7.0.6">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/7.0.6/e8433956653fd38cf0b1d8769484ca8411123713/spring-beans-7.0.6.jar" />
+  </library>
+  <library name="Gradle: io.micrometer:micrometer-observation:1.16.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-observation/1.16.4/64b57332a68b75ba36d9bf9b4cfd62610d0fb158/micrometer-observation-1.16.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-aop:7.0.6">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/7.0.6/1b8358db4326013f8cfcbf22061aa076489dfbbe/spring-aop-7.0.6.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-expression:7.0.6">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/7.0.6/c00c73c545c81e2eae224a46a7c509fca74a2860/spring-expression-7.0.6.jar" />
+  </library>
+  <library name="Gradle: tools.jackson.core:jackson-core:3.1.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/tools.jackson.core/jackson-core/3.1.0/df0dc5d0bf720739ae7b6afeee2af2aabf88905b/jackson-core-3.1.0.jar" />
+  </library>
+  <library name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.21">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.21/b1bc1868bf02dc0bd6c7836257a036a331005309/jackson-annotations-2.21.jar" />
+  </library>
+  <library name="Gradle: ch.qos.logback:logback-core:1.5.32">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.5.32/fdfb3ff9a842303d4a95207294a6c6bc64e2605d/logback-core-1.5.32.jar" />
+  </library>
+  <library name="Gradle: org.slf4j:slf4j-api:2.0.17">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.17/d9e58ac9c7779ba3bf8142aff6c830617a7fe60f/slf4j-api-2.0.17.jar" />
+  </library>
+  <library name="Gradle: org.apache.logging.log4j:log4j-api:2.25.3">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.25.3/fb385330d89c2d61058ef649403f214633569205/log4j-api-2.25.3.jar" />
+  </library>
+  <library name="Gradle: org.jspecify:jspecify:1.0.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.jspecify/jspecify/1.0.0/7425a601c1c7ec76645a78d22b8c6a627edee507/jspecify-1.0.0.jar" />
+  </library>
+  <library name="Gradle: biz.aQute.bnd:biz.aQute.bnd.annotation:7.1.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/biz.aQute.bnd/biz.aQute.bnd.annotation/7.1.0/2f2be18c936d08cf46ea6cfa0043f34afdf38705/biz.aQute.bnd.annotation-7.1.0.jar" />
+  </library>
+  <library name="Gradle: com.google.errorprone:error_prone_annotations:2.38.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.38.0/fc0ae991433e8590ba51cd558421478318a74c8c/error_prone_annotations-2.38.0.jar" />
+  </library>
+  <library name="Gradle: org.osgi:org.osgi.annotation.bundle:2.0.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.annotation.bundle/2.0.0/f5c2cd6e670c3c5d440d3003efd5ef2ead5c68eb/org.osgi.annotation.bundle-2.0.0.jar" />
+  </library>
+  <library name="Gradle: org.osgi:org.osgi.annotation.versioning:1.1.2">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.annotation.versioning/1.1.2/dc3cd4ec96c0b3c5459fe00694bd73a816ecf93e/org.osgi.annotation.versioning-1.1.2.jar" />
+  </library>
+  <library name="Gradle: commons-logging:commons-logging:1.3.6">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.3.6/63e78ca6cd446c0ad166d14f03ed99e7efb3896d/commons-logging-1.3.6.jar" />
+  </library>
+  <library name="Gradle: io.micrometer:micrometer-commons:1.16.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/io.micrometer/micrometer-commons/1.16.4/b6a0e350a714f4cd973d760e68104c9602b4564c/micrometer-commons-1.16.4.jar" />
+  </library>
+  <library name="Gradle: org.osgi:org.osgi.resource:1.0.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.resource/1.0.0/343c88949132984b3f2d4175a72c40b77dc65619/org.osgi.resource-1.0.0.jar" />
+  </library>
+  <library name="Gradle: org.osgi:org.osgi.service.serviceloader:1.0.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.osgi/org.osgi.service.serviceloader/1.0.0/3728ff37909c6a3c1870b3e851342d9f2bd3cc63/org.osgi.service.serviceloader-1.0.0.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-webmvc-test:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-webmvc-test/4.0.4/c81ad36dabf3e6149045a4b8ff86467440a0e4d2/spring-boot-starter-webmvc-test-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-jackson-test:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-jackson-test/4.0.4/6f11adfb6dd06b4fbfa9f05c90d8b837d7ce71e/spring-boot-starter-jackson-test-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-test:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-test/4.0.4/b6fdfa74dd6394030ee568079b15485214882a01/spring-boot-starter-test-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-resttestclient:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-resttestclient/4.0.4/7dc6d2e06835c10eff784b1afdd904e05abc2439/spring-boot-resttestclient-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-webmvc-test:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-webmvc-test/4.0.4/ab336d18932027b938635425ba0037fc2fde0161/spring-boot-webmvc-test-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-test-autoconfigure:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test-autoconfigure/4.0.4/e0668ccd4523548829a289340b2b68d55aae5b79/spring-boot-test-autoconfigure-4.0.4.jar" />
+  </library>
+  <library name="Gradle: org.springframework.boot:spring-boot-test:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-test/4.0.4/ff215df7a4cd065d8396763a8dd20948fd5f5ab1/spring-boot-test-4.0.4.jar" />
+  </library>
+  <library name="Gradle: com.jayway.jsonpath:json-path:2.10.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/com.jayway.jsonpath/json-path/2.10.0/e1a0b2e6db75401181c9c1c64c6d155ca5c6d608/json-path-2.10.0.jar" />
+  </library>
+  <library name="Gradle: jakarta.xml.bind:jakarta.xml.bind-api:4.0.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/jakarta.xml.bind/jakarta.xml.bind-api/4.0.4/d6d2327f3817d9a33a3b6b8f2e15a96bc2e7afdc/jakarta.xml.bind-api-4.0.4.jar" />
+  </library>
+  <library name="Gradle: net.minidev:json-smart:2.6.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/net.minidev/json-smart/2.6.0/5f858a43a325a8673da6869ab2bc787a1bcb2244/json-smart-2.6.0.jar" />
+  </library>
+  <library name="Gradle: org.assertj:assertj-core:3.27.7">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.27.7/2f4f64f054c9d618d4b1d89e7611559f5e2cfff7/assertj-core-3.27.7.jar" />
+  </library>
+  <library name="Gradle: org.awaitility:awaitility:4.3.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.awaitility/awaitility/4.3.0/f0c0bc1e404e500bab3f498b922eaedeae1c0207/awaitility-4.3.0.jar" />
+  </library>
+  <library name="Gradle: org.hamcrest:hamcrest:3.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest/3.0/8fd9b78a8e6a6510a078a9e30e9e86a6035cfaf7/hamcrest-3.0.jar" />
+  </library>
+  <library name="Gradle: org.junit.jupiter:junit-jupiter:6.0.3">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter/6.0.3/da72f4bc0feccbca639b901ace26e3a62512ebec/junit-jupiter-6.0.3.jar" />
+  </library>
+  <library name="Gradle: org.mockito:mockito-junit-jupiter:5.20.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-junit-jupiter/5.20.0/58ed6603af5f8f53886d49be00264a3fdd1278d5/mockito-junit-jupiter-5.20.0.jar" />
+  </library>
+  <library name="Gradle: org.mockito:mockito-core:5.20.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/5.20.0/a32f446f38acf636363c5693db6498047731b9e0/mockito-core-5.20.0.jar" />
+  </library>
+  <library name="Gradle: org.skyscreamer:jsonassert:1.5.3">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.skyscreamer/jsonassert/1.5.3/aaa43e0823d2a0e106e8754d6a9c4ab24e05e9bc/jsonassert-1.5.3.jar" />
+  </library>
+  <library name="Gradle: org.springframework:spring-test:7.0.6">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.springframework/spring-test/7.0.6/fd012839666ea5696d9efda89717d5f3f134fefe/spring-test-7.0.6.jar" />
+  </library>
+  <library name="Gradle: org.xmlunit:xmlunit-core:2.10.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.xmlunit/xmlunit-core/2.10.4/eff1eddcdb52fdeaa7e28ca68301db49361d8bec/xmlunit-core-2.10.4.jar" />
+  </library>
+  <library name="Gradle: jakarta.activation:jakarta.activation-api:2.1.4">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/jakarta.activation/jakarta.activation-api/2.1.4/9e5c2a0d75dde71a0bedc4dbdbe47b78a5dc50f8/jakarta.activation-api-2.1.4.jar" />
+  </library>
+  <library name="Gradle: net.minidev:accessors-smart:2.6.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/net.minidev/accessors-smart/2.6.0/2d96f1d9b6ab7f13261aa81b15703574185747a0/accessors-smart-2.6.0.jar" />
+  </library>
+  <library name="Gradle: net.bytebuddy:byte-buddy:1.17.8">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy/1.17.8/af5735f63d00ca47a9375fae5c7471a36331c6ed/byte-buddy-1.17.8.jar" />
+  </library>
+  <library name="Gradle: org.junit.jupiter:junit-jupiter-params:6.0.3">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-params/6.0.3/6cd3efadd171a3ddd70413868a9c3af988a45907/junit-jupiter-params-6.0.3.jar" />
+  </library>
+  <library name="Gradle: org.junit.jupiter:junit-jupiter-api:6.0.3">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/6.0.3/2e6cfb62db85350179f0408ed5270f7cdf8cefda/junit-jupiter-api-6.0.3.jar" />
+  </library>
+  <library name="Gradle: net.bytebuddy:byte-buddy-agent:1.17.8">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.8/f09415827a71be7ed621c7bd02550678f28bc81c/byte-buddy-agent-1.17.8.jar" />
+  </library>
+  <library name="Gradle: com.vaadin.external.google:android-json:0.0.20131108.vaadin1">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar" />
+  </library>
+  <library name="Gradle: org.ow2.asm:asm:9.7.1">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.7.1/f0ed132a49244b042cd0e15702ab9f2ce3cc8436/asm-9.7.1.jar" />
+  </library>
+  <library name="Gradle: org.apiguardian:apiguardian-api:1.1.2">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.apiguardian/apiguardian-api/1.1.2/a231e0d844d2721b0fa1b238006d15c6ded6842a/apiguardian-api-1.1.2.jar" />
+  </library>
+  <library name="Gradle: org.junit.platform:junit-platform-commons:6.0.3">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/6.0.3/1093a7faa2ba47c28aa83f378d9a2083463bb20c/junit-platform-commons-6.0.3.jar" />
+  </library>
+  <library name="Gradle: org.opentest4j:opentest4j:1.3.0">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.3.0/152ea56b3a72f655d4fd677fc0ef2596c3dd5e6e/opentest4j-1.3.0.jar" />
+  </library>
+  <library name="Gradle: org.junit.platform:junit-platform-launcher:6.0.3">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-launcher/6.0.3/4a721cdd640ebdaa4c6850f5eee0b0377cf698b0/junit-platform-launcher-6.0.3.jar" />
+  </library>
+  <library name="Gradle: org.junit.platform:junit-platform-engine:6.0.3">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/6.0.3/101305612e7daa4ce978d3ba73fd02dd4a5f22d9/junit-platform-engine-6.0.3.jar" />
+  </library>
+  <library name="Gradle: org.junit.jupiter:junit-jupiter-engine:6.0.3">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/6.0.3/e26f7e17d06cfc85ba7643b5ad00c87d5f2084dd/junit-jupiter-engine-6.0.3.jar" />
+  </library>
+  <library name="Gradle: org.objenesis:objenesis:3.3">
+    <archive path="C:/Users/ionut/.gradle/caches/modules-2/files-2.1/org.objenesis/objenesis/3.3/1049c09f1de4331e8193e579448d0916d75b7631/objenesis-3.3.jar" />
+  </library>
+</eclipse-userlibraries>
+
