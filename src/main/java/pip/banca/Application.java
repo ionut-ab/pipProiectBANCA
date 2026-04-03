@@ -1,10 +1,12 @@
-package com.example.springboot;
+package pip.banca;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
+import pip.banca.entities.User;
+import pip.banca.repositories.UserRepository;
 
 import java.util.Arrays;
 
@@ -16,14 +18,14 @@ public class Application {
 	}
 
 	@Bean
-	public CommandLineRunner commandLineRunner(ApplicationContext ctx) {
+	CommandLineRunner init(UserRepository userRepository) {
 		return args -> {
-			System.out.println("Let's inspect the beans provided by Spring Boot:");
-
-			String[] beanNames = ctx.getBeanDefinitionNames();
-			Arrays.sort(beanNames);
-			for (String beanName : beanNames) {
-				//System.out.println(beanName);
+			User user = new User("Alice", "alice@example.com");
+			try {
+				userRepository.save(user);
+				System.out.println("User saved!");
+			}catch(Exception ex){
+				System.out.println(ex.getMessage());
 			}
 
 		};
