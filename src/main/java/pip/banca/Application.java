@@ -20,7 +20,7 @@ public class Application {
 	@Bean
 	CommandLineRunner init(UserRepository userRepository) {
 		return args -> {
-			User user = new User("Alice", "alice@example.com");
+			User user = new User("Alice", "Popescu", "alice@example.com", "07namcartela", "sub podu ros", "nam");
 			try {
 				userRepository.save(user);
 				System.out.println("User saved!");
