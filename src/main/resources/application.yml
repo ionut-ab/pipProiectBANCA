@@ -1,0 +1,19 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8082/realms/default
+          jwk-set-uri: http://localhost:8082/realms/default/protocol/openid-connect/certs
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
+jwt:
+  auth:
+    converter:
+      resource-id: demo
+      principle-attribute: preferred_username

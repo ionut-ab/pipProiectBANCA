@@ -11,15 +11,23 @@ import java.util.UUID;
 public class Transaction {
     @Id
     @GeneratedValue
-    private UUID trans_id;
+    private UUID id;
 
     @ManyToOne
     @JoinColumn(name="sender_id")
     private User sender;
 
     @ManyToOne
+    @JoinColumn(name="sender_iban")
+    private UserIbanMapping sender_iban;
+
+    @ManyToOne
     @JoinColumn(name="receiver_id")
     private User receiver;
+
+    @ManyToOne
+    @JoinColumn(name="receiver_iban")
+    private UserIbanMapping receiver_iban;
 
     @Column
     private float amountSent;
