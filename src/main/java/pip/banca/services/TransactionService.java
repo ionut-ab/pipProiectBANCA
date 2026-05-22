@@ -2,7 +2,12 @@ package pip.banca.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import pip.banca.entities.Transaction;
 import pip.banca.repositories.TransactionRepository;
+
+import java.time.LocalDateTime;
+import java.util.UUID;
 
 @Service
 public class TransactionService {
@@ -15,32 +20,43 @@ public class TransactionService {
         this.repo = repo;
     }
 
-    public boolean StartTransaction(String sender_iban, String receiver_iban, Double amount)
-    {
-        try{
-            var senderAccount = ibanServ.SubtractMoney(sender_iban, -amount);
-            if (senderAccount == null){
-                throw new Exception("Sender account has insufficient funds!");
+    @Transactional
+    public boolean StartTransaction(UUID senderID, UUID receiverID, String senderIBAN, String receiverIBAN, Double amount) {
+        try {
+            var senderAccountOpt = ibanServ.GetUserIban(senderIBAN);
+            var receiverAccountOpt = ibanServ.GetUserIban(receiverIBAN);
+
+            if (senderAccountOpt.isEmpty()) {
+                System.out.println("Sender account not found: " + senderIBAN);
+                return false;
             }
-            var receiverAccount = ibanServ.AddMoney(receiver_iban, amount);
-            if (receiverAccount == null){
-                throw new Exception("Sender account has insufficient funds!");
+            if (receiverAccountOpt.isEmpty()) {
+                System.out.println("Receiver account not found: " + receiverIBAN);
+                return false;
             }
 
-            boolean result = ibanServ.SaveAccountState(senderAccount);
-            if(!result){
-                throw new Exception("Could not save sender account!");
-            }
+            var senderAccount = senderAccountOpt.get();
+            var receiverAccount = receiverAccountOpt.get();
 
-            result = ibanServ.SaveAccountState(receiverAccount);
-            if(!result){
-                throw new Exception("Could not save receiver account!");
-            }
+            senderAccount.subtractMoney(amount);
+            receiverAccount.addMoney(amount);
 
-        }catch(Exception ex) {
+            ibanServ.SaveAccountState(senderAccount);
+            ibanServ.SaveAccountState(receiverAccount);
+
+            Transaction transaction = new Transaction(
+                    senderAccount.getAccountOwner(),
+                    receiverAccount.getAccountOwner(),
+                    senderAccount,
+                    receiverAccount,
+                    amount.floatValue(),
+                    LocalDateTime.now()
+            );
+            repo.save(transaction);
+            return true;
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
             return false;
         }
-        return true;
     }
 }

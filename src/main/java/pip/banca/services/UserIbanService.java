@@ -38,6 +38,7 @@ public class UserIbanService {
             }
             account = result.get();
             account.addMoney(amount);
+            this.repo.save(account);
         }
         catch(Exception ex){
             System.out.println(ex.getMessage());
@@ -57,6 +58,7 @@ public class UserIbanService {
             }
             account = result.get();
             account.subtractMoney(amount);
+            this.repo.save(account);
         }
         catch(Exception ex){
             System.out.println(ex.getMessage());
