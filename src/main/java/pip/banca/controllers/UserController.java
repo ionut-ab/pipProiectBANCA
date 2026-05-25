@@ -39,6 +39,8 @@ public class UserController {
 
     @PostMapping("/create")
     public User createUser(@RequestBody User user) {
+        System.out.println("CREATED USER-");
+
         return userRepository.save(user);
     }
 

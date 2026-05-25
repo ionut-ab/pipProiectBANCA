@@ -31,9 +31,20 @@ public class ProxyForwardingFilter extends OncePerRequestFilter {
     }
 
     @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) {
+        // Now that ProxyController handles forwarding, we disable this filter.
+        return true;
+    }
+
+    @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
                                     FilterChain filterChain) throws ServletException, IOException {
+
+        if (request.getRequestURI().startsWith("/users/")) {
+            filterChain.doFilter(request, response);
+            return;
+        }
 
         // Auth check is already done by Spring Security before this runs.
         // Here you can enrich the request before forwarding.
