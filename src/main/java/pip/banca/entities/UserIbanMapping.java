@@ -36,6 +36,7 @@ public class UserIbanMapping {
 
     public double getBalance() {return balance;}
     public String getIBAN(){return IBAN;}
+    public User getAccountOwner() {return accountOwner;}
 
     public void addMoney(Double money) throws Exception{
         if(money < 0){
@@ -44,9 +45,12 @@ public class UserIbanMapping {
         this.balance += money;
     }
 
-    public void subtractMoney(Double money) throws Exception{
-        if(money > 0){
-            throw new Exception("Can't subtract POSITIVE money!");
+    public void subtractMoney(Double money) throws Exception {
+        if (money < 0) {
+            throw new Exception("The amount to subtract must be positive");
+        }
+        if (this.balance < money) {
+            throw new Exception("Insufficient funds");
         }
         this.balance -= money;
     }

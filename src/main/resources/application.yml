@@ -17,3 +17,5 @@ jwt:
     converter:
       resource-id: demo
       principle-attribute: preferred_username
+backend:
+  base-url: http://localhost:8080

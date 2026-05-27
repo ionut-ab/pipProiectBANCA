@@ -10,7 +10,7 @@ import java.util.Optional;
 import java.util.List;
 import java.util.UUID;
 
-public interface TransactionRepository extends JpaRepository<Transaction, Long> {
+public interface TransactionRepository extends JpaRepository<Transaction, UUID> {
 
     // Derived query methods
     Optional<Transaction> findById(UUID id);

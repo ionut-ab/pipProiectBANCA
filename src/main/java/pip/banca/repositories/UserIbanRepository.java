@@ -10,7 +10,7 @@ import java.util.Optional;
 import java.util.List;
 import java.util.UUID;
 
-public interface UserIbanRepository extends JpaRepository<UserIbanMapping, Long> {
+public interface UserIbanRepository extends JpaRepository<UserIbanMapping, String> {
     // Derived query methods
     List<UserIbanMapping> findByAccountOwner(User accountOwner);
 

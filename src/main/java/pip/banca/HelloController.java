@@ -9,8 +9,6 @@ import pip.banca.services.UserService;
 @RestController
 public class HelloController {
 
-        private User UserRepository;
-
     @GetMapping("/say-hello")
     public String index() {
         return "hai noroi";

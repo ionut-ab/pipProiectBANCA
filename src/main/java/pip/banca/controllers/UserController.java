@@ -13,6 +13,7 @@ import pip.banca.repositories.UserRepository;
 import pip.banca.services.TransactionService;
 import pip.banca.services.UserIbanService;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
@@ -40,32 +41,35 @@ public class UserController {
     @PostMapping("/create")
 
     public User createUser(@RequestBody User user) {
+        System.out.println("CREATED USER-");
+
         return userRepository.save(user);
     }
 
     @GetMapping("/id")
-    public User getUserById(@RequestParam UUID id){return userRepository.findById(id);};
+    public User getUserById(@RequestParam UUID id){return userRepository.findById(id).orElse(null);};
 
     @PostMapping("/create_account")
     public boolean createUserAccount(@RequestBody String IBAN, @RequestParam UUID userID){
-        var user = userRepository.findById(userID);
+        var user = userRepository.findById(userID).orElseThrow(() -> new RuntimeException("User not found"));
         return accountService.CreateAccount(IBAN, user);
     }
 
     @GetMapping("/get_accounts")
     public List<UserIbanMapping> getUserAccounts(@RequestParam UUID userID){
-        return userIbanRepository.findByAccountOwner(userRepository.findById(userID));
+        var user = userRepository.findById(userID).orElseThrow(() -> new RuntimeException("User not found"));
+        return userIbanRepository.findByAccountOwner(user);
     }
 
     @GetMapping("/get_transactions")
     public List<Transaction> getUserTransactions(@RequestParam UUID userID){
         var outgoingTransactions = transactionRepository.findBySenderId(userID);
         var incomingTransactions = transactionRepository.findByReceiverId(userID);
-        var result = outgoingTransactions.addAll(incomingTransactions);
-        if (!result){
-            return null;
-        }
-        return outgoingTransactions;
+        
+        List<Transaction> allTransactions = new ArrayList<>(outgoingTransactions);
+        allTransactions.addAll(incomingTransactions);
+        
+        return allTransactions;
     }
 
     @PostMapping("/transfer_money")
@@ -73,7 +77,7 @@ public class UserController {
             @RequestParam UUID userID,
             @RequestBody TransactionInit data)
     {
-        var user = userRepository.findById(userID);
+        var user = userRepository.findById(userID).orElseThrow(() -> new RuntimeException("User not found"));
         var accounts = userIbanRepository.findByAccountOwner(user);
         boolean accountBelongsToCurrentUser = false;
         for(var account : accounts){
@@ -87,7 +91,13 @@ public class UserController {
             return false;
         }
 
-        var result = transactionService.StartTransaction(data.senderIBAN, data.receiverIBAN, data.amount);
+        UUID receiverID = null;
+        var receiverAccount = userIbanRepository.findByIBAN(data.receiverIBAN);
+        if (receiverAccount.isPresent()) {
+            receiverID = receiverAccount.get().getAccountOwner().getId();
+        }
+
+        var result = transactionService.StartTransaction(userID, receiverID, data.senderIBAN, data.receiverIBAN, data.amount);
         return result;
     }
 }

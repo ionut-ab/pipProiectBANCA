@@ -38,5 +38,14 @@ public class Transaction {
     @Column
     private String description;
 
+    public Transaction() {}
 
+    public Transaction(User sender, User receiver, UserIbanMapping sender_iban, UserIbanMapping receiver_iban, float amountSent, LocalDateTime transactionTimestamp) {
+        this.sender = sender;
+        this.receiver = receiver;
+        this.sender_iban = sender_iban;
+        this.receiver_iban = receiver_iban;
+        this.amountSent = amountSent;
+        this.transactionTimestamp = transactionTimestamp;
+    }
 }
