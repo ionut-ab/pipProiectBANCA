@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 import java.util.UUID;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/users")
@@ -37,7 +38,12 @@ public class UserController {
     public UserController(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-
+    @PostMapping("/login")
+    public User login(@RequestBody Map<String, String> credentials) {
+        String email = credentials.get("email");
+        return userRepository.findByEmail(email)
+                .orElseThrow(() -> new RuntimeException("Utilizatorul nu a fost găsit în baza de date"));
+    }
     @PostMapping("/create")
 
     public User createUser(@RequestBody User user) {

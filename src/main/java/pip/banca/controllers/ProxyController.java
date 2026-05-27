@@ -35,7 +35,7 @@ public class ProxyController {
         return forwardRequest(request);
     }
 
-    @PreAuthorize("hasRole('user')")
+    @PreAuthorize("hasRole('ROLE_user')")
     @RequestMapping("/**")
     public Mono<ResponseEntity<byte[]>> userRoutes(HttpServletRequest request) throws IOException {
         return forwardRequest(request);
