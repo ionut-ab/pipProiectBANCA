@@ -54,4 +54,7 @@ public class UserIbanMapping {
         }
         this.balance -= money;
     }
+    public void setBalance(Double balance) {
+        this.balance = balance;
+    }
 }

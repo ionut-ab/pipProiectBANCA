@@ -94,6 +94,7 @@ public class UserIbanService {
 
     public boolean CreateAccount(String IBAN, User accountOwner) {
         UserIbanMapping account = new UserIbanMapping(IBAN, accountOwner);
+        account.setBalance(5000.0);
         return this.SaveAccountState(account);
     }
 }
