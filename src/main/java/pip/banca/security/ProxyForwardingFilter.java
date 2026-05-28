@@ -17,25 +17,54 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 import java.io.IOException;
 
+/**
+ * Servlet filter that can forward authenticated requests to the backend service.
+ */
 @Component
 @Order(1)
 public class ProxyForwardingFilter extends OncePerRequestFilter {
 
+    /**
+     * Base URL of the backend service that receives forwarded requests.
+     */
     @Value("${backend.base-url}")
     private String backendBaseUrl;
 
+    /**
+     * WebClient used to forward HTTP requests.
+     */
     private final WebClient webClient;
 
+    /**
+     * Creates the filter with a WebClient from the supplied builder.
+     *
+     * @param webClientBuilder builder configured by the Spring context
+     */
     public ProxyForwardingFilter(WebClient.Builder webClientBuilder) {
         this.webClient = webClientBuilder.build();
     }
 
+    /**
+     * Disables this filter because request forwarding is handled by {@link pip.banca.controllers.ProxyController}.
+     *
+     * @param request incoming servlet request
+     * @return true to skip this filter for every request
+     */
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) {
         // Now that ProxyController handles forwarding, we disable this filter.
         return true;
     }
 
+    /**
+     * Forwards authenticated requests or rejects unauthenticated requests if the filter is enabled.
+     *
+     * @param request incoming servlet request
+     * @param response servlet response to write to
+     * @param filterChain downstream filter chain for local user routes
+     * @throws ServletException when downstream filters fail
+     * @throws IOException when request or response IO fails
+     */
     @Override
     protected void doFilterInternal(HttpServletRequest request,
                                     HttpServletResponse response,
@@ -64,6 +93,15 @@ public class ProxyForwardingFilter extends OncePerRequestFilter {
         }
     }
 
+    /**
+     * Sends the current request to the backend with authenticated user headers.
+     *
+     * @param request incoming servlet request
+     * @param response servlet response to write backend data into
+     * @param userId authenticated user identifier
+     * @param email authenticated user email
+     * @throws IOException when request or response IO fails
+     */
     private void forwardRequest(HttpServletRequest request,
                                 HttpServletResponse response,
                                 String userId,

@@ -10,10 +10,25 @@ import java.util.Optional;
 import java.util.List;
 import java.util.UUID;
 
+/**
+ * Repository for persisting and querying IBAN account mappings.
+ */
 public interface UserIbanRepository extends JpaRepository<UserIbanMapping, String> {
     // Derived query methods
+    /**
+     * Finds all account mappings owned by a user.
+     *
+     * @param accountOwner owner to search for
+     * @return account mappings owned by the user
+     */
     List<UserIbanMapping> findByAccountOwner(User accountOwner);
 
+    /**
+     * Finds an account mapping by IBAN.
+     *
+     * @param IBAN account IBAN
+     * @return account mapping with the supplied IBAN, when present
+     */
     Optional<UserIbanMapping> findByIBAN(String IBAN);
 
 }

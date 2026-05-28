@@ -3,8 +3,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://localhost:8082/realms/default
-          jwk-set-uri: http://localhost:8082/realms/default/protocol/openid-connect/certs
+          issuer-uri: https://citric-blunt-exemption.ngrok-free.dev/auth/realms/default
+          jwk-set-uri: https://citric-blunt-exemption.ngrok-free.dev/auth/realms/default/protocol/openid-connect/certs
 
 logging:
   level:

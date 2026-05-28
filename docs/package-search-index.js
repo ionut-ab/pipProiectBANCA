@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"pip.banca"},{"l":"pip.banca.controllers"},{"l":"pip.banca.dtos"},{"l":"pip.banca.entities"},{"l":"pip.banca.repositories"},{"l":"pip.banca.security"},{"l":"pip.banca.services"}];updateSearchResults();

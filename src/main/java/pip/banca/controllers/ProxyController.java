@@ -16,31 +16,66 @@ import reactor.core.publisher.Mono;
 import java.io.IOException;
 
 
+/**
+ * Controller that forwards authenticated API requests to the configured backend.
+ */
 @RequestMapping("/")
 @RestController
 public class ProxyController {
 
+    /**
+     * Base URL of the backend service that receives forwarded requests.
+     */
     @Value("${backend.base-url}")
     private String backendBaseUrl;
 
+    /**
+     * WebClient used to relay incoming HTTP requests.
+     */
     private final WebClient webClient;
 
+    /**
+     * Builds a proxy controller with a WebClient created from the provided builder.
+     *
+     * @param webClientBuilder builder configured by the Spring context
+     */
     public ProxyController(WebClient.Builder webClientBuilder) {
         this.webClient = webClientBuilder.build();
     }
 
+    /**
+     * Forwards administrator API requests to the backend.
+     *
+     * @param request original servlet request
+     * @return backend response body and status
+     * @throws IOException when the request body cannot be read
+     */
     @PreAuthorize("hasRole('admin')")
-    @RequestMapping("/admin/**")
+    @RequestMapping("/api/admin/**")
     public Mono<ResponseEntity<byte[]>> adminRoutes(HttpServletRequest request) throws IOException {
         return forwardRequest(request);
     }
 
+    /**
+     * Forwards regular user API requests to the backend.
+     *
+     * @param request original servlet request
+     * @return backend response body and status
+     * @throws IOException when the request body cannot be read
+     */
     @PreAuthorize("hasRole('user')")
-    @RequestMapping("/**")
+    @RequestMapping("/api/**")
     public Mono<ResponseEntity<byte[]>> userRoutes(HttpServletRequest request) throws IOException {
         return forwardRequest(request);
     }
 
+    /**
+     * Copies the incoming request to the backend and enriches it with authenticated user headers.
+     *
+     * @param request original servlet request
+     * @return backend response body and status
+     * @throws IOException when the request body cannot be read
+     */
     private Mono<ResponseEntity<byte[]>> forwardRequest(HttpServletRequest request) throws IOException {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String userId = "";

@@ -1,0 +1,7 @@
+pip.banca
+pip.banca.controllers
+pip.banca.dtos
+pip.banca.entities
+pip.banca.repositories
+pip.banca.security
+pip.banca.services

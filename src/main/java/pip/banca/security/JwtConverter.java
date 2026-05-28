@@ -19,17 +19,36 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+/**
+ * Converts OAuth2 JWT tokens into Spring Security authentication tokens.
+ */
 @Component
 public class JwtConverter implements Converter<Jwt, AbstractAuthenticationToken> {
 
+    /**
+     * Default converter for standard JWT authorities.
+     */
     private final JwtGrantedAuthoritiesConverter jwtGrantedAuthoritiesConverter =
             new JwtGrantedAuthoritiesConverter();
 
+    /**
+     * Claim name used as the principal name.
+     */
     @Value("${jwt.auth.converter.principle-attribute}")
     private String principleAttribute;
+
+    /**
+     * Resource identifier used to read client-specific roles from the token.
+     */
     @Value("${jwt.auth.converter.resource-id}")
     private String resourceId;
 
+    /**
+     * Converts a JWT into a Spring authentication token with standard and resource roles.
+     *
+     * @param jwt JWT to convert
+     * @return authentication token built from the JWT
+     */
     @Override
     public AbstractAuthenticationToken convert(@NonNull Jwt jwt) {
 
@@ -45,6 +64,12 @@ public class JwtConverter implements Converter<Jwt, AbstractAuthenticationToken>
         );
     }
 
+    /**
+     * Resolves the claim that should be used as the Spring principal name.
+     *
+     * @param jwt JWT containing the principal claim
+     * @return principal claim value
+     */
     private String getPrincipleClaimName(Jwt jwt) {
         String claimName = JwtClaimNames.SUB;
         if (principleAttribute != null) {
@@ -53,6 +78,12 @@ public class JwtConverter implements Converter<Jwt, AbstractAuthenticationToken>
         return jwt.getClaim(claimName);
     }
 
+    /**
+     * Extracts resource-specific roles and converts them into Spring Security authorities.
+     *
+     * @param jwt JWT containing resource access claims
+     * @return role authorities for the configured resource
+     */
     private Collection<? extends GrantedAuthority> extractResourceRoles(Jwt jwt) {
         Map<String, Object> resourceAccess;
         Map<String, Object> resource;
