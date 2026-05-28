@@ -32,8 +32,10 @@ public class ProxyForwardingFilter extends OncePerRequestFilter {
 
     @Override
     protected boolean shouldNotFilter(HttpServletRequest request) {
-        // Now that ProxyController handles forwarding, we disable this filter.
-        return true;
+        String path = request.getRequestURI();
+        return path.startsWith("/users/create") ||
+                path.startsWith("/users/login") ||
+                path.startsWith("/users/me");
     }
 
     @Override
